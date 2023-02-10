@@ -1,0 +1,22 @@
+{
+  "name": "neo4jdb",
+  "description": "Base de données neo4j pour l'accitrack",
+  "image": "registry.heroku.com/neo4jdb/webapp",
+  "scripts": {
+    "postdeploy": "./start.sh"
+  },
+  "env": {
+    "PORT": ["7687", "7474"]
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "docker": {
+    "image": "your_docker_image_name"
+  }
+}

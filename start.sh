@@ -1,0 +1,1 @@
+docker run -p 7687:7687 -p 7474:7474 -d registry.heroku.com/neo4jdb/webapp
